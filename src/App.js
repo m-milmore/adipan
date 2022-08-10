@@ -1,23 +1,18 @@
 import "./App.css";
 
+import TodoApp from "./TodoApp";
+
+import MapFct from "./mapFct";
+
+
+
 function App() {
-  return (
+  
+return (
     <div className="App">
       <header className="App-header">
-        <form action="">
-          <h2>TODO</h2>
-          <label htmlFor="">What needs to be done?</label>
-          <br />
-          <input type="text" />
-          <button>Add #!</button>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </form>
-      </header>
+        <TodoApp />
+              </header>
     </div>
   );
 }

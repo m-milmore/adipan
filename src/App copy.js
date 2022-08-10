@@ -1,5 +1,5 @@
 // import logo from "./logo.svg";
-// import "./App.css";
+import "./App.css";
 import MyClassComp from "./MyClassComp";
 // import CardClassComp from "./CardClassComp";
 // import MapFct from "./mapFct";

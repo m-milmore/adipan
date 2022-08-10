@@ -1,0 +1,42 @@
+how can you tell if a react project has been created with create-react-app?
+	You will know that an app has been created using create-react-app when you can find the package react-scripts in the package. json file of the project. 
+
+how to you install the packages
+	npm install
+
+npm version?	7.16.0
+
+node version?	v13.12.0
+
+vscode version?	1.70.0
+
+check for no-unused-vars warnings
+
+git init	fait
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
