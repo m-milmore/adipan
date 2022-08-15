@@ -4,35 +4,258 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="exercise.css" />
-    <title>CSS Grid Exercise</title>
+    <title>Test Fiche</title>
   </head>
 
   <body>
     <div class="container">
-      <div class="block1 block">1</div>
-      <div class="block2 block">2</div>
-      <div class="block3 block">3</div>
-      <div class="block4 block">4</div>
-      <div class="block5 block">5</div>
-      <div class="block6 block">6</div>
-      <div class="block7 block">7</div>
-      <div class="block8 block">8</div>
-      <div class="block9 block">9</div>
-      <div class="block10 block">10</div>
-      <div class="block11 block">11</div>
-      <div class="block12 block">12</div>
-      <div class="block13 block">13</div>
-      <div class="block14 block">14</div>
-      <div class="block15 block">15</div>
-      <div class="block16 block">16</div>
-      <div class="block17 block">17</div>
-      <div class="block18 block">18</div>
-      <div class="block19 block">19</div>
-      <div class="block20 block">20</div>
-      <div class="block21 block">21</div>
-      <div class="block22 block">22</div>
-      <div class="block23 block">23</div>
-      <div class="block24 block">24</div>
+      <div class="grid-container">
+        <div class="block1 block"><p>Fiche synthèse du cas</p></div>
+        <div class="block2 block">
+          <div class="block-grid">
+            <label for="numero">Numéro</label>
+            <input
+              class="align-right"
+              type="text"
+              name="numero"
+              id="numero"
+              value="168"
+            />
+          </div>
+        </div>
+        <div class="block3 block">
+          <div class="block-grid">
+            <label for="date">Date</label>
+            <input class="align-right" type="text" name="date" id="date" />
+          </div>
+        </div>
+        <div class="block4 block">
+          <div class="block-grid">
+            <label for="mois">Mois</label>
+            <input
+              class="align-right"
+              type="text"
+              name="mois"
+              id="mois"
+              value="9"
+            />
+          </div>
+        </div>
+        <div class="block5 block">
+          <div class="block-grid">
+            <label for="leduc">Leduc</label>
+            <input
+              class="blue-bg"
+              type="text"
+              name="leduc"
+              id="leduc"
+              value="MAH : Manifestation et Approche d'Humanoïde"
+            />
+          </div>
+        </div>
+        <div class="block6 block">
+          <img src="./public/pdd.jpg" alt="pas du diable" />
+        </div>
+        <div class="block7 block"><p>7</p></div>
+        <div class="block8 block">
+          <div class="block-grid">
+            <label for="hne">H.n.e.</label>
+            <input
+              class="align-right"
+              type="text"
+              name="hne"
+              id="hne"
+              value="01:30"
+            />
+          </div>
+        </div>
+        <div class="block9 block">
+          <div class="block-grid">
+            <label for="hae">H.a.e.</label>
+            <input
+              class="align-right"
+              type="text"
+              name="hae"
+              id="hae"
+              value="02:30"
+            />
+          </div>
+        </div>
+        <div class="block10 block">
+          <div class="block-grid">
+            <label for="annee">Année</label>
+            <input
+              class="align-right"
+              type="text"
+              name="annee"
+              id="annee"
+              value="1976"
+            />
+          </div>
+        </div>
+        <div class="block11 block">
+          <div class="block-grid">
+            <label for="hynek">Hynek</label>
+            <input
+              class="blue-bg"
+              type="text"
+              name="hynek"
+              id="hynek"
+              value="RR3 : Rencontre d'un ufonaute"
+            />
+          </div>
+        </div>
+        <div class="block12 block">
+          <div class="block-grid">
+            <label for="cote">Cote</label>
+            <input
+              class="blue-bg"
+              type="text"
+              name="cote"
+              id="cote"
+              value="CE"
+            />
+          </div>
+        </div>
+        <div class="block13 block">
+          <div class="block-grid">
+            <label for="credibilite">Crédibilité</label>
+            <input
+              class="blue-bg align-right"
+              type="text"
+              name="credibilite"
+              id="credibilite"
+              value="3"
+            />
+          </div>
+        </div>
+        <div class="block14 block">
+          <div class="block-grid">
+            <label for="etrangete">Étrangeté</label>
+            <input
+              class="blue-bg align-right"
+              type="text"
+              name="etrangete"
+              id="etrangete"
+              value="2"
+            />
+          </div>
+        </div>
+        <div class="block15 block">
+          <label for="site">Site</label>
+          <textarea class="maroon-bg" name="site" id="site" rows="6" cols="36">
+Face au 505, 70 ième avenue
+        </textarea
+          >
+        </div>
+        <div class="block16 block">
+          <div class="block-grid">
+            <label for="nobj">N.Obj.</label>
+            <input
+              class="align-right lime-bg"
+              type="text"
+              name="nobj"
+              id="nobj"
+              value="0"
+            />
+          </div>
+        </div>
+        <div class="block17 block">
+          <div class="block-grid">
+            <label for="duree">Durée</label>
+            <input
+              class="align-right blue-bg"
+              type="text"
+              name="duree"
+              id="duree"
+            />
+          </div>
+        </div>
+        <div class="block18 block">
+          <label for="lieu">Lieu</label>
+          <textarea class="maroon-bg" name="lieu" id="lieu" rows="5" cols="37">
+Laval</textarea
+          >
+        </div>
+        <div class="block19 block">
+          <div class="block-grid">
+            <label for="temoins">Témoins</label>
+            <input
+              class="font-small"
+              type="text"
+              name="temoins"
+              id="temoins"
+              value="Lefrancois Fernand"
+            />
+          </div>
+        </div>
+        <div class="block20 block">
+          <label for="noname">Lieu</label>
+          <textarea name="noname" id="noname" rows="5" cols="10"></textarea>
+        </div>
+        <div class="block21 block">
+          <div class="block-grid">
+            <label for="cause">Cause</label>
+            <input
+              class="blue-bg"
+              type="text"
+              name="cause"
+              id="cause"
+              value="Non identifié : être"
+            />
+          </div>
+        </div>
+        <div class="block22 block">
+          <div class="block-grid">
+            <label for="codeHypothese">Code hypothèse</label>
+            <input
+              class="blue-bg"
+              type="text"
+              name="codeHypothese"
+              id="codeHypothese"
+              value="E: Effet ou trace seule"
+            />
+          </div>
+        </div>
+        <div class="block23 block">
+          <div class="block-grid">
+            <label for="forme">Forme</label>
+            <input
+              class="blue-bg"
+              type="text"
+              name="forme"
+              id="forme"
+              value="T : être étrange"
+            />
+          </div>
+        </div>
+        <div class="block24 block">
+          <div class="block-grid">
+            <label class="small-width" for="codeForme">Code forme</label>
+            <input
+              class="blue-bg"
+              type="text"
+              name="codeForme"
+              id="codeForme"
+              value="T: Êtres Étranges"
+            />
+          </div>
+        </div>
+        <div class="block25 block">
+          <label for="description">Description</label>
+          <textarea name="description" id="description" rows="15" cols="80">
+Un bruit violent fut entendu dans le milieu de la nuit.
+
+Le lendemain, des traces de ... pas du diable ... furent découvertes.
+Les pas du diable étaient espacés d'un mètre chacune, il fallait s'étirer pour les suivre.
+Elles donnaient l'impression de sabots brulants.
+Elles étaient incrustées dans le béton du trottoir, la peinture des fenêtres et l'asphalte de la rue.
+On canstata que, sortant de l'entrée de la maison où elles avaient grimpé le mur,
+elles suivaient un trottoir, traversaient la rue, suivaient l'autre trottoir en revenant, sens opposé,
+elles s'arrètaient net à l'intersection de la rue voisine.
+          </textarea>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,3 +1,9 @@
+html {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
 *,
 :before,
 :after {
@@ -7,10 +13,13 @@
 }
 
 .container {
+  text-align: center;
+}
+
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(12, 70px);
-  grid-template-rows: repeat(20, 40px);
-  gap: 10px 10px;
+  grid-template-columns: repeat(192, 0.25rem);
+  grid-template-rows: repeat(160, 0.25rem);
 
   align-content: center; /* start; center; space-between; space-around; */
   align-items: stretch; /* stretch; center; start; end; */
@@ -19,96 +28,249 @@
   justify-content: center; /* start; center; space-between; space-around; space-evenly; */
   justify-items: stretch; /* stretch; center; start; end; */
   justify-self: stretch; /* stretch; center; start; end; */
+
   text-align: center;
-  color: white;
   margin-top: 1rem;
+  background-color: rgb(191, 191, 191);
+  display: inline-grid;
+  border-radius: 2px;
+  overflow: hidden;
 }
 
+/* common for all blocks */
 .block {
-    padding: 10px;
+  position: relative;
+}
+
+/* centers content in blocks */
+.block p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.block-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  text-align: left;
+}
+
+.block label {
+  color: rgb(0, 120, 255);
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  margin-bottom: 2px;
+  margin-left: 3px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.block input {
+  width: 100%;
+  border-radius: 3px;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+  border-top: 3px solid gray;
+  border-left: 3px solid gray;
+  border-right: 3px solid rgb(213, 212, 212);
+  border-bottom: 3px solid rgb(213, 212, 212);
+  font-size: 1.15rem;
+  font-weight: 900;
+  padding: 0 2px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.block img {
+  height: 100%;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  border-right: 2px solid rgb(213, 212, 212);
+  border-bottom: 2px solid rgb(213, 212, 212);
+}
+
+.block textarea {
+  resize: none;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  border-top: 3px solid gray;
+  border-left: 3px solid gray;
+  border-right: 3px solid rgb(213, 212, 212);
+  border-bottom: 3px solid rgb(213, 212, 212);
+  width: 100%;
+  text-align: left;
+}
+
+.blue-bg {
+  background-color: rgb(226, 237, 255);
+}
+
+.maroon-bg {
+  background-color: rgb(210, 176, 164);
+}
+
+.lime-bg {
+  background-color: rgb(225, 254, 223);
+}
+
+.align-right {
+  text-align: right;
+}
+
+.block .font-small {
+  height: 1.75rem;
+}
+
+.block .small-width {
+  width: 75%;
 }
 
 .block1 {
-  background-color: royalblue;
-  grid-column: 1 / span 12;
-  grid-row: 1 / span 1;
+  background-color: rgb(0, 168, 255);
+  grid-column: 1 / span 192;
+  grid-row: 1 / span 12;
+  border: 2px solid black;
+  border-right: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  box-shadow: 7px 5px rgb(130, 127, 120);
 }
 
 .block2 {
-  background-color: green;
-  grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
+  grid-column: 4 / span 15;
+  grid-row: 16 / span 12;
 }
 
 .block3 {
-  background-color: red;
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
+  grid-column: 22 / span 15;
+  grid-row: 16 / span 12;
 }
 
 .block4 {
-  background-color: black;
-  grid-column: 3 / span 3;
-  grid-row: 2 / span 1;
+  grid-column: 40 / span 42;
+  grid-row: 16 / span 12;
 }
 
 .block5 {
-  background-color: purple;
-  grid-column: 6 / span 4;
-  grid-row: 2 / span 1;
+  grid-column: 85 / span 76;
+  grid-row: 16 / span 12;
 }
 
 .block6 {
-  background-color: yellow;
-  grid-column: 10 / span 3;
-  grid-row: 2 / span 4;
+  grid-column: 164 / span 18;
+  grid-row: 16 / span 32;
 }
 
 .block7 {
-  background-color: brown;
-  grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
+  background-color: white;
+  grid-column: 182 / span 11;
+  grid-row: 16 / span 32;
+  color: white;
 }
 
 .block8 {
-  background-color: pink;
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
+  grid-column: 4 / span 15;
+  grid-row: 30 / span 12;
 }
 
 .block9 {
-  background-color: orange;
-  grid-column: 3 / span 3;
-  grid-row: 3 / span 1;
+  grid-column: 22 / span 15;
+  grid-row: 30 / span 12;
 }
 
 .block10 {
-  background-color: gray;
-  grid-column: 6 / span 4;
-  grid-row: 3 / span 1;
+  grid-column: 40 / span 42;
+  grid-row: 30 / span 12;
 }
 
 .block11 {
-  background-color: aliceblue;
-  grid-column: 1 / span 2;
-  grid-row: 4 / span 1;
+  grid-column: 85 / span 76;
+  grid-row: 30 / span 12;
 }
 
 .block12 {
-  background-color: blueviolet;
-  grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
+  grid-column: 4 / span 33;
+  grid-row: 44 / span 12;
 }
 
 .block13 {
-  background-color: cornflowerblue;
-  grid-column: 3 / span 2;
-  grid-row: 4 / span 1;
+  grid-column: 40 / span 20;
+  grid-row: 44 / span 12;
 }
 
 .block14 {
-  background-color: darkcyan;
-  grid-column: 6 / span 4;
-  grid-row: 4 / span 2;
+  grid-column: 62 / span 20;
+  grid-row: 44 / span 12;
 }
 
+.block15 {
+  grid-column: 85 / span 76;
+  grid-row: 44 / span 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.block16 {
+  grid-column: 164 / span 14;
+  grid-row: 50 / span 13;
+}
+
+.block17 {
+  grid-column: 180 / span 13;
+  grid-row: 50 / span 13;
+}
+
+.block18 {
+  grid-column: 4 / span 79;
+  grid-row: 58 / span 16;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.block19 {
+  grid-column: 4 / span 173;
+  grid-row: 76 / span 11;
+}
+
+.block20 {
+  grid-column: 180 / span 13;
+  grid-row: 66 / span 27;
+}
+
+.block21 {
+  grid-column: 4 / span 45;
+  grid-row: 91 / span 12;
+}
+
+.block22 {
+  grid-column: 51 / span 45;
+  grid-row: 91 / span 12;
+}
+
+.block23 {
+  grid-column: 98 / span 45;
+  grid-row: 91 / span 12;
+}
+
+.block24 {
+  grid-column: 145 / span 45;
+  grid-row: 91 / span 12;
+}
+
+.block25 {
+  grid-column: 4 / span 190;
+  grid-row: 106 / span 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
